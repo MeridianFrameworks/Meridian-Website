@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Meridian Frameworks builds systems that scale."
+  />
+
+  <title>Meridian Frameworks</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --background-color: #050505;
+      --primary-text-color: #ffffff;
+      --accent-color: #E08A27;
+      --contact-bottom-spacing: 64px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+      margin: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      min-height: 100svh;
+      background: var(--background-color);
+      color: var(--primary-text-color);
+      font-family: "Orbitron", sans-serif;
+      overflow: hidden;
+    }
+
+    main {
+      min-height: 100vh;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: clamp(0.75rem, 1.5vw, 1.25rem);
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--primary-text-color);
+      font-size: clamp(1.4rem, 6.4vw, 5.25rem);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: clamp(0.06rem, 0.45vw, 0.35rem);
+      white-space: nowrap;
+    }
+
+    p {
+      margin: 0;
+      color: var(--accent-color);
+      font-size: clamp(0.8rem, 2vw, 1.35rem);
+      font-weight: 400;
+      line-height: 1.4;
+      letter-spacing: clamp(0.04rem, 0.25vw, 0.15rem);
+    }
+
+    .contact-link {
+      position: fixed;
+      left: 50%;
+      bottom: var(--contact-bottom-spacing);
+      transform: translateX(-50%);
+      color: var(--primary-text-color);
+      font-size: 0.85rem;
+      font-weight: 400;
+      letter-spacing: 0.08rem;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .contact-link:focus-visible {
+      outline: 2px solid var(--accent-color);
+      outline-offset: 0.35rem;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="brand" aria-label="Meridian Frameworks">
+      <h1>MERIDIAN FRAMEWORKS</h1>
+      <p>Building Systems That Scale</p>
+    </section>
+  </main>
+
+  <a class="contact-link" href="mailto:info@meridianframeworks.com">
+    Contact us
+  </a>
+</body>
+</html>
